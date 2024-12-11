@@ -1,0 +1,8 @@
+For css:
+https://wakamaifondue.com/
+
+Inherited/not inherited tags:
+https://www.w3.org/TR/CSS22/propidx.html
+
+Frontend projects todo:
+https://roadmap.sh/frontend/projects?difficulty=beginner

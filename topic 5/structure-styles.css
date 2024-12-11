@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-BIG {
+  position: relative;
+  width: 1300px;
+  height: 800px;
+  border: 5px solid #6082b6;
+  left: 10%;
+}
+
+.box-middle {
+  position: absolute;
+  width: 1200px;
+  height: 700px;
+  border: 5px solid #6082b6;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-left {
+  position: relative;
+  width: 350px;
+  height: 660px;
+  border: 5px solid #e52b50;
+  left: 2%;
+  top: 3%;
+}
+
+.box-left-upper {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  border: 5px solid #e52b50;
+  left: 5%;
+  top: 3%;
+}
+
+.box-left-middle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #e52b50;
+  left: 5%;
+  top: 20%;
+}
+
+.box-left-bottom {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  border: 5px solid #e52b50;
+  left: 5%;
+  top: 68%;
+}
+
+.box-right {
+  position: absolute;
+  width: 750px;
+  height: 400px;
+  border: 5px solid #915c83;
+  bottom: 39%;
+  left: 35%;
+}
+
+.box-left-inside {
+  position: absolute;
+  width: 200px;
+  height: 370px;
+  border: 5px solid #915c83;
+  left: 3%;
+  top: 3%;
+}
+
+.box-left-inside-up {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #915c83;
+  left: 12%;
+  top: 3%;
+}
+
+.box-left-inside-bottom {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border: 5px solid #915c83;
+  left: 15%;
+  top: 57%;
+}
+
+.box-right-inside {
+  position: absolute;
+  width: 425px;
+  height: 350px;
+  border: 5px solid #915c83;
+  left: 35%;
+  top: 5%;
+}
+
+.box-right-inside-left {
+  position: absolute;
+  width: 125px;
+  height: 300px;
+  border: 5px solid #915c83;
+  left: 5%;
+  top: 5%;
+}
+
+.box-right-inside-right {
+  position: absolute;
+  width: 225px;
+  height: 300px;
+  border: 5px solid #915c83;
+  left: 40%;
+  top: 5%;
+}
+
+.box-bottom {
+  position: absolute;
+  width: 750px;
+  height: 200px;
+  border: 5px solid #50c878;
+  left: 35%;
+  bottom: 5%;
+}
+
+.box-bottom-inside-left {
+  position: absolute;
+  width: 150px;
+  height: 170px;
+  border: 5px solid #50c878;
+  left: 5%;
+  bottom: 5%;
+}
+
+.box-bottom-inside-right {
+  position: absolute;
+  width: 425px;
+  height: 150px;
+  border: 5px solid #50c878;
+  left: 35%;
+  top: 10%;
+}
+
+.blue-box {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 5px solid #007ba7;
+  left: 3%;
+  top: 5%;
+  background-color: #007ba7;
+}

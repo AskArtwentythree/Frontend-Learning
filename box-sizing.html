@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 10px solid #000;
+            padding: 10px;
+
+            /* Устанавливает алгоритм вычисления размеров элемента при явно заданных ширине и высоте */
+            /* content-box - рамки и внутренние отступы рисуются наружу, увеличивая размеры элемента */
+            /* border-box - рамки и внутренние отступы рисуются внутрь, не увеличивая размеры элемента */
+
+            /* box-sizing: content-box; */
+            /* box-sizing: border-box; */
+        }
+    </style>
+    <body>
+        <div class="box">Lorem, ipsum dolor sit a</div>
+    </body>
+</html>

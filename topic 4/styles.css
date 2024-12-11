@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@counter-style marker-font {
+  system: cyclic;
+  symbols: "check_circle";
+  suffix: " ";
+}
+
+/* TASK 1 */
+
+.markers-default,
+.markers,
+.markers-google {
+  padding: 0;
+  margin: 0 0 20px 24px;
+}
+
+.markers-default li:hover::before {
+  content: url(images/marker2.png);
+}
+
+.markers-default li,
+.markers-google li,
+.markers li {
+  list-style: none;
+  padding-left: 24px;
+  margin: 7px 0;
+}
+
+.markers-default li,
+.markers-google li {
+  padding-left: 4px;
+}
+
+.markers li:hover {
+  background: url(images/marker3.png) no-repeat 0 50%;
+  background-size: 23px;
+}
+
+.markers-google li::marker {
+  font-family: "Material Icons";
+  color: lightcoral;
+}
+
+.markers-google li:hover {
+  list-style-type: marker-font;
+}
+
+/* TASK 2 */
+.quoute::before {
+  content: open-quote;
+}
+
+.quoute::after {
+  content: close-quote;
+}
+
+/* TASK 3 */
+.lines-up-down {
+  display: inline-block;
+}
+
+.lines-up-down::before {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: pink;
+}
+
+.lines-up-down::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: pink;
+}

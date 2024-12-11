@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  position: sticky;
+  display: inline-block;
+  top: 15px;
+  left: 15px;
+  border: 2px solid;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.sidebar a {
+  display: block;
+}
+
+.main-content {
+  display: inline-block;
+  width: 93%;
+}
+
+.button-back-to-top {
+  display: inline-block;
+  position: sticky;
+  bottom: 15px;
+  margin-right: 13px;
+  border-radius: 100px;
+  color: #fff;
+  padding: 10px;
+  background: lightgreen;
+  left: 1555px;
+}
+.box {
+  padding: 15px;
+  border: 3px solid;
+  margin: 15px;
+}
+
+.sticky-box {
+  display: inline-block;
+  position: sticky;
+  top: 15px;
+  vertical-align: top;
+  padding: 5px;
+}
+
+.nextto-another {
+  display: inline-block;
+  width: 30%;
+  margin-left: 75px;
+}
+
+.sticky-warning {
+  display: inline-block;
+  position: sticky;
+  top: 1px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid red;
+  background-color: rgb(219, 92, 92);
+  color: white;
+}
+
+.submit-button {
+  display: inline-block;
+  position: sticky;
+  bottom: 1px;
+  margin: 10px;
+}
+
+.login-fields {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #555;
+  font-weight: bold;
+}
+
+.login-inputs {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #4caf50;
+  width: 100%;
+  font-size: 16px;
+  display: inline-block;
+  position: sticky;
+  bottom: 1px;
+  margin: 10px;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  background: gray;
+}

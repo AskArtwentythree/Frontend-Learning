@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Button with point</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .my-button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .button-wrapper {
+        position: relative;
+        height: 250px;
+        width: 300px;
+        border: 3px solid greenyellow;
+        margin-left: 750px;
+        margin-top: 300px;
+      }
+
+      .circle {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        left: 68%;
+        top: 40%;
+      }
+
+      .number {
+        position: absolute;
+        left: 70%;
+        display: none;
+        top: 40%;
+      }
+
+      .circle:hover + .number {
+        color: red;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-wrapper">
+      <button class="my-button">Click this and ...</button>
+      <div class="circle"></div>
+      <div class="number">7</div>
+    </div>
+  </body>
+</html>

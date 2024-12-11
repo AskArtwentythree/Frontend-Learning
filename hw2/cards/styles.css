@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.card {
+  border-radius: 10px;
+  margin: 25px;
+  display: inline-block;
+}
+
+.card__header {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card__header--yellow {
+  box-shadow: 0px 4px rgb(195, 143, 64);
+  background-color: rgba(245, 180, 82, 1);
+  color: rgba(155, 99, 15, 1);
+}
+
+.card__space {
+  padding: 12.5px 12px 12.5px 12px;
+}
+
+.card__component-name {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.card__version {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.card__text {
+  margin-left: 232px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.card__middle-space {
+  padding: 24px 12px 24px 12px;
+}
+
+.card__text-space {
+  padding-right: 3px;
+}
+.card__middle-text--bold {
+  font-weight: 800;
+}
+
+.card__description {
+  margin-top: 27px;
+  margin-bottom: 10px;
+}
+
+.card__update {
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgba(200, 200, 200, 1);
+}
+
+.card__space-update {
+  padding: 12px 12px 24px 12px;
+  color: rgba(136, 136, 136, 1);
+}
+
+.card__date {
+  margin-left: 274px;
+}
+
+.card__header--green {
+  box-shadow: 0px 4px rgb(30, 95, 65);
+  background-color: rgba(39, 124, 84, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.card__header--red {
+  box-shadow: 0px 4px rgb(194, 65, 65);
+  background-color: rgba(245, 82, 82, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.card__header--blue {
+  box-shadow: 0px 4px rgb(81, 72, 176);
+  background-color: rgba(95, 85, 208, 1);
+  color: rgba(255, 255, 255, 1);
+}

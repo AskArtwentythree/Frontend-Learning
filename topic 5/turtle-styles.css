@@ -1,0 +1,88 @@
+body {
+  height: 100%;
+
+  width: 100%;
+}
+
+.trapezoid {
+  border-bottom: 130px solid #354a21;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  width: 225px;
+  position: relative;
+  left: 266px;
+  top: 210px;
+  transform: rotate(30deg);
+}
+
+.oval {
+  position: absolute;
+  height: 400px;
+  width: 800px;
+  background-color: #6e2c00;
+  border-radius: 50%;
+  top: 100px;
+  left: 525px;
+  border: 40px solid rgb(44, 25, 6);
+}
+
+.eye {
+  height: 80px;
+  width: 80px;
+  background-color: #000000;
+  border-radius: 50%;
+  position: relative;
+  left: 330px;
+  top: -215px;
+}
+
+.mirror {
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  top: 15px;
+}
+
+.back-leg {
+  height: 150px;
+  width: 200px;
+  background-color: #244105;
+  transform: rotate(90deg);
+  position: relative;
+  left: 1050px;
+  top: 350px;
+}
+
+.back-foot {
+  height: 50px;
+  width: 200px;
+  background-color: #244105;
+  position: absolute;
+  top: 220px;
+  left: 73px;
+  transform: rotate(90deg);
+}
+
+.front-leg {
+  height: 150px;
+  width: 200px;
+  background-color: #244105;
+  transform: rotate(-45deg);
+  position: relative;
+  left: 530px;
+  top: 170px;
+}
+
+.front-foot {
+  border-bottom: 90px solid #244105;
+  border-left: 35px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 150px;
+  right: 64px;
+  top: -55px;
+  transform: rotate(90deg);
+}
