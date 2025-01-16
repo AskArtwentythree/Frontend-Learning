@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    /* Флекс-контейнер - тот, кому написали display: flex. Все его дети первого порядка (первой вложенности) автоматически становятся флекс-элементами */
+    .flex-container {
+      display: flex;
+
+      /* row - по умолчанию */
+      flex-direction: row;
+
+      /* height: 40px; */
+      border: 1px solid #000;
+
+      /* Расстояние между флекс-элементами по горизонтали или по вертикали */
+      gap: 10px;
+      height: 100px;
+
+      /* Разрешает или запрещает переносить элементы на следующую строку (по умолчанию nowrap) */
+      /* flex-wrap: nowrap; */
+
+      /* Выравнивает флекс-элементы вдоль ОО при наличии свободного места. */
+      /* flex-start - по умолчанию */
+      /* justify-content: space-between; */
+
+      /* Выравнивает флекс-элементы вдоль ПО при наличии свободного места. */
+      /* stretch (растягивать) - по умолчанию */
+      /* align-items: stretch; */
+    }
+
+    /*
+        ФЕ (флекс элементы) всегда выстаиваются вдоль основной оси.
+        Основная ось (ОО) задается свойством flex-direction.
+        Другая ось автоматически поперечной (ПО).
+        */
+
+    .flex-element {
+      border: 1px solid #000;
+    }
+
+    .flex-element:nth-child(2) {
+      background-color: slateblue;
+
+      /* Разрешает или запрещает элементу увеличиваться вдоль ОО при наличии свободного места. */
+      /* 0 - по умолчанию */
+      /* flex-grow: 0; */
+      /* flex: 1; */
+
+      /* Размер вдоль ОО - ширина, если flex-direction: row или высота, если flex-direction: column */
+      /* flex-basis: 200px; */
+      /* Или */
+      /* width: 200px; */
+
+      /* Разрешает или запрещает элементу уменьшаться вдоль ОО относительно flex-basis. */
+      /* 1 - по умолчанию */
+      /* flex-shrink: 1; */
+
+      /* Универсальное свойство */
+      /* flex: grow shrink basis; */
+      /* flex: 0 1 200px; */
+    }
+  </style>
+  <body>
+    <div class="flex-container">
+      <div class="flex-element">1</div>
+      <span class="flex-element">2</span>
+      <button class="flex-element">3</button>
+      <span class="flex-element">4</span>
+    </div>
+  </body>
+</html>

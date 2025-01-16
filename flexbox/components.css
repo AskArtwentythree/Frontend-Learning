@@ -1,0 +1,492 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./Inter-VariableFont.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  font-family: "Inter";
+  padding: 30px 86px 0px 30px;
+}
+
+.header__name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48.97px;
+  color: rgba(39, 39, 46, 1);
+  height: 94px;
+}
+
+.header__name::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 1px;
+  background-color: rgba(226, 232, 240, 1);
+  width: 1108px;
+  top: 45.38px;
+}
+
+.header__component {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27.3px;
+  color: rgba(247, 147, 111, 1);
+  margin: 30px 0px 9px;
+}
+
+.header__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.48px;
+  color: rgba(122, 122, 157, 1);
+}
+
+.main {
+  font-family: "Inter";
+  padding: 30px 31px 30px 30px;
+}
+
+/* .main-content {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  border-radius: 20px;
+  background-color: rgba(247, 248, 251, 1);
+  font-family: "Inter";
+  height: 868px;
+  width: 1178px;
+}
+ */
+
+.main-content {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+  border-radius: 20px;
+  background-color: rgba(247, 248, 251, 1);
+  font-family: "Inter";
+  height: 868px;
+  width: 1178px;
+}
+
+.main-content-space {
+  padding: 32px;
+}
+
+.card {
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card--white {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.card__space-for-products {
+  padding: 8px 8px 24px 8px;
+}
+
+.card__image {
+  border-radius: 16px;
+  width: 334px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 24px;
+}
+
+.card__image-for-shoes {
+  background-image: url("./images/snickers.jpg");
+}
+
+.card__space {
+  padding: 0px 16px 0 16px;
+}
+
+.card__square-for-icon {
+  position: absolute;
+  left: 345px;
+  top: 290px;
+  height: 46px;
+  width: 46px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 14px;
+  box-shadow: 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+}
+
+.card__icon {
+  position: relative;
+  right: 2px;
+}
+
+.card__title {
+  color: rgba(66, 84, 102, 1);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.card__price {
+  margin-top: 8px;
+  color: rgba(39, 39, 46, 1);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.3px;
+}
+
+.card__image-for-earphones {
+  background-image: url("./images/earphones.jpg");
+}
+
+.card__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__header-space {
+  padding-left: 17px;
+  padding-right: 16px;
+}
+
+.card__info {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.card__info--dark {
+  color: rgba(39, 39, 46, 1);
+}
+
+.card__number-of-products {
+  background-color: rgba(76, 111, 255, 1);
+  border-radius: 100px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.52px;
+}
+
+.card__number-of-products-space {
+  padding: 2px 10px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.options__space {
+  margin-top: 16px;
+}
+
+.options__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  flex-grow: 2;
+}
+
+.options__text--dark-blue {
+  color: rgba(66, 84, 102, 1);
+}
+
+.options__number {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.52px;
+  color: rgba(80, 87, 128, 1);
+  border-radius: 100px;
+  background-color: rgba(228, 236, 247, 1);
+  padding: 2px 10px;
+}
+
+.card--blue {
+  background-color: rgba(22, 25, 44, 1);
+}
+
+.card__content-for-iphone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.card__space-for-iphone-card {
+  padding: 32px;
+}
+
+.card__phone-model {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.card__phone-offer {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48.41px;
+}
+
+.card__phone-image {
+  margin: 32px 0px 28px 0px;
+}
+
+.card__space-for-iphone-image {
+  padding-left: 26px;
+}
+.card__time-description {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12.1px;
+  color: rgba(242, 242, 242, 1);
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.timer__block {
+  width: 34px;
+  height: 24px;
+  border-radius: 6px;
+  background-color: rgba(228, 236, 247, 1);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  color: rgba(80, 87, 128, 1);
+}
+
+.timer__block-space {
+  padding: 4px 10px 4px 10px;
+}
+
+.card__button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  border-radius: 8px;
+  background-color: rgba(76, 111, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+}
+
+.card__space-for-button {
+  padding: 16px 24px;
+}
+
+.card__space-for-review {
+  padding: 24px 24px 32px 24px;
+}
+
+.card__review {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card__review-photo {
+  height: 46px;
+  width: 46px;
+  border-radius: 100px;
+  background-image: url("./images/avatar.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 16px;
+}
+
+.card__info--coal-black {
+  color: rgba(22, 25, 44, 1);
+}
+
+.card__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-bottom: 23px;
+}
+
+.card__text--gray {
+  color: rgba(66, 84, 102, 1);
+}
+
+.card__review-rating {
+  display: inline-flex;
+  gap: 8px;
+  color: rgba(247, 147, 111, 1);
+}
+
+.card__space-for-paymethods {
+  padding: 24px 24px 11px 24px;
+}
+
+.card__info--black {
+  color: rgba(0, 0, 0, 1);
+}
+
+.card__edit-button {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.52px;
+  margin-left: auto;
+}
+
+.card__edit-button--blue {
+  color: rgba(76, 111, 255, 1);
+}
+
+.card__credit-card {
+  display: flex;
+  border-radius: 16px;
+  box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05),
+    0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card__space-for-credit-card {
+  padding: 16px 48px 16px 16px;
+}
+
+.card__space-for-higher-credit-card {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.card__credit-card-image {
+  width: 85px;
+  height: 58px;
+}
+
+.card__info-about-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.92px;
+}
+
+.card__credit-name--black {
+  color: rgba(39, 39, 46, 1);
+}
+
+.card__credit-expr-date--grey {
+  color: rgba(66, 84, 102, 1);
+}
+
+.card__date {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21.63px;
+}
+
+.card__space-for-button-in-paymethods {
+  padding: 16px 113px;
+  margin-top: 24px;
+}
+
+.card__space-for-payment {
+  padding: 32px;
+}
+
+.card__money-sign {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  background-color: rgba(102, 203, 159, 1);
+  margin-bottom: 24px;
+}
+
+.card__sign {
+  position: relative;
+  transform: translate(11px, 13px);
+  color: rgba(255, 255, 255, 1);
+}
+
+.card__space-payment {
+  margin-bottom: 8px;
+}
+
+.card__button-for-payment {
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+}
+
+.card__button-for-payment {
+  background-color: rgba(76, 111, 255, 1);
+}
+
+.main::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 1px;
+  background-color: rgba(226, 232, 240, 1);
+  width: 1108px;
+  top: 45.38px;
+}
+
+.footer {
+  display: flex;
+  padding: 35.5px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand__logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 100px;
+  background-image: url("./images/webpixels-seeklogo.png");
+  background-size: cover;
+  background-position: top center;
+  margin-right: 11px;
+  box-shadow: 0px 30px 40px 0px rgba(20, 37, 63, 0.08),
+    0px 0px 1px 0px rgba(12, 26, 75, 0.1);
+}
+
+.brand__name {
+  width: 104px;
+  height: 22px;
+}
+
+.footer__heart {
+  color: rgba(255, 51, 85, 1);
+  padding-right: 10px;
+}
