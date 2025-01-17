@@ -21,20 +21,19 @@
   font-size: 36px;
   line-height: 48.97px;
   color: rgba(39, 39, 46, 1);
-  height: 94px;
+  margin-bottom: 45.38px;
 }
 
-.header__name::after {
+.header__line {
   content: "";
   position: relative;
   display: block;
   height: 1px;
   background-color: rgba(226, 232, 240, 1);
   width: 1108px;
-  top: 45.38px;
 }
 
-.header__component {
+.header__text {
   font-weight: 600;
   font-size: 20px;
   line-height: 27.3px;
@@ -68,7 +67,7 @@
 }
  */
 
-.main-content {
+.main__content {
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -76,12 +75,11 @@
   gap: 32px;
   border-radius: 20px;
   background-color: rgba(247, 248, 251, 1);
-  font-family: "Inter";
   height: 868px;
   width: 1178px;
 }
 
-.main-content-space {
+.main__content-space {
   padding: 32px;
 }
 
@@ -112,10 +110,6 @@
   background-image: url("./images/snickers.jpg");
 }
 
-.card__space {
-  padding: 0px 16px 0 16px;
-}
-
 .card__square-for-icon {
   position: absolute;
   left: 345px;
@@ -138,6 +132,10 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
+}
+
+.card__description-space {
+  padding: 0px 16px 0 16px;
 }
 
 .card__price {
@@ -175,9 +173,6 @@
 }
 
 .card__number-of-products {
-  background-color: rgba(76, 111, 255, 1);
-  border-radius: 100px;
-  color: rgba(255, 255, 255, 1);
   font-size: 12px;
   font-weight: 700;
   line-height: 14.52px;
@@ -185,11 +180,19 @@
 
 .card__number-of-products-space {
   padding: 2px 10px;
+  border-radius: 100px;
+}
+
+.card__number-of-products--blue {
+  background-color: rgba(76, 111, 255, 1);
+}
+
+.card__number-of-products-text--white {
+  color: rgba(255, 255, 255, 1);
 }
 
 .options {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 28px;
 }
@@ -209,14 +212,12 @@
   color: rgba(66, 84, 102, 1);
 }
 
-.options__number {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 14.52px;
-  color: rgba(80, 87, 128, 1);
-  border-radius: 100px;
+.card__number-of-products--gray {
   background-color: rgba(228, 236, 247, 1);
-  padding: 2px 10px;
+}
+
+.card__number-of-products-text--blue {
+  color: rgba(80, 87, 128, 1);
 }
 
 .card--blue {
@@ -235,13 +236,13 @@
   padding: 32px;
 }
 
-.card__phone-model {
+.card__phone-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
 }
 
-.card__phone-offer {
+.card__phone-text {
   font-weight: 700;
   font-size: 40px;
   line-height: 48.41px;
@@ -270,8 +271,6 @@
 }
 
 .timer__block {
-  width: 34px;
-  height: 24px;
   border-radius: 6px;
   background-color: rgba(228, 236, 247, 1);
   font-size: 10px;
@@ -289,15 +288,17 @@
   font-weight: 600;
   line-height: 14px;
   border-radius: 8px;
-  background-color: rgba(76, 111, 255, 1);
   color: rgba(255, 255, 255, 1);
   border: none;
 }
 
-.card__space-for-button {
+.card__space-for-price-button {
   padding: 16px 24px;
 }
 
+.card__button--blue {
+  background-color: rgba(76, 111, 255, 1);
+}
 .card__space-for-review {
   padding: 24px 24px 32px 24px;
 }
@@ -348,14 +349,14 @@
   color: rgba(0, 0, 0, 1);
 }
 
-.card__edit-button {
+.card__word-button {
   font-size: 12px;
   font-weight: 700;
   line-height: 14.52px;
   margin-left: auto;
 }
 
-.card__edit-button--blue {
+.card__word-button--blue {
   color: rgba(76, 111, 255, 1);
 }
 
@@ -382,7 +383,7 @@
   height: 58px;
 }
 
-.card__info-about-card {
+.card__details {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -391,11 +392,11 @@
   line-height: 25.92px;
 }
 
-.card__credit-name--black {
+.card__details-name--black {
   color: rgba(39, 39, 46, 1);
 }
 
-.card__credit-expr-date--grey {
+.card__details-expr-date--grey {
   color: rgba(66, 84, 102, 1);
 }
 
@@ -406,12 +407,12 @@
   line-height: 21.63px;
 }
 
-.card__space-for-button-in-paymethods {
+.card__space-for-show-button {
   padding: 16px 113px;
   margin-top: 24px;
 }
 
-.card__space-for-payment {
+.card__space-for-sign {
   padding: 32px;
 }
 
@@ -429,11 +430,11 @@
   color: rgba(255, 255, 255, 1);
 }
 
-.card__space-payment {
+.card__space-header {
   margin-bottom: 8px;
 }
 
-.card__button-for-payment {
+.card__small-button {
   border-radius: 6px;
   padding: 12px 20px;
   font-size: 12px;
@@ -443,7 +444,7 @@
   border: none;
 }
 
-.card__button-for-payment {
+.card__small-button--blue {
   background-color: rgba(76, 111, 255, 1);
 }
 
