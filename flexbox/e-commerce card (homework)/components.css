@@ -290,6 +290,7 @@
   border-radius: 8px;
   color: rgba(255, 255, 255, 1);
   border: none;
+  cursor: pointer;
 }
 
 .card__space-for-price-button {
@@ -354,6 +355,7 @@
   font-weight: 700;
   line-height: 14.52px;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .card__word-button--blue {
@@ -442,6 +444,7 @@
   line-height: 12px;
   color: rgba(255, 255, 255, 1);
   border: none;
+  cursor: pointer;
 }
 
 .card__small-button--blue {

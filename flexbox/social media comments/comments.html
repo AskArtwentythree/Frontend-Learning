@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="comments.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google font Roboto-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google icon for icon "Send" -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=send"
+    />
+    <!-- Font Awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/b3ab38330d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Social Media Comments</title>
+  </head>
+  <body>
+    <!-- The whole page -->
+    <div class="page">
+      <!-- Profile of a user -->
+      <div class="profile">
+        <div class="profile__avatar"></div>
+        <div class="info">
+          <div class="info__text">Leslie Alexander</div>
+          <div class="info__text-small">Johnson & Johnson</div>
+        </div>
+      </div>
+      <!-- Images used in the post-->
+      <div class="images">
+        <div class="images__picture images__picture-left"></div>
+        <div class="images__picture images__picture-right"></div>
+      </div>
+      <h4 class="page__header">Web Design templates Selection</h4>
+      <p class="page__text page__text-space">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <!-- Number of likes -->
+      <div class="likes">
+        <div class="likes__heart-icon"><i class="fa-solid fa-heart"></i></div>
+        <p class="info__text">34</p>
+      </div>
+      <!-- Bar for writing a comment -->
+      <div class="comment-bar comment-bar-space">
+        <div class="comment-bar__field comment-bar__field-space">
+          <div class="comment-bar__input">Write a comment</div>
+        </div>
+      </div>
+      <!-- Comments from users -->
+      <div class="reviews">
+        <!-- Avatar of user -->
+        <img class="reviews__avatar" src="./images/man1.png" alt="Avatar" />
+        <!-- User's comment -->
+        <div class="comment">
+          <div class="nickname">
+            <p class="info__text">Mitchell</p>
+            <p class="info__text-small">25 minutes ago</p>
+          </div>
+          <p class="page__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+            eiusmod.
+          </p>
+          <!-- Number of likes and button "reply"-->
+          <div class="interactions">
+            <div class="likes">
+              <div class="likes__heart-icon">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <p class="info__text">18</p>
+            </div>
+            <button
+              class="info__reply-button info__text-small info__text-small-space"
+            >
+              Reply
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Comments from users -->
+      <div class="reviews reviews__space">
+        <img class="reviews__avatar" src="./images/man2.png" alt="Avatar" />
+        <div class="comment">
+          <div class="nickname">
+            <p class="info__text">Robert Fox</p>
+            <p class="info__text-small">3 minutes ago</p>
+          </div>
+          <p class="page__text">
+            Dolor sit ameteiusmod consectetur adipiscing elit.
+          </p>
+          <div class="image image__space">
+            <div class="comment__image"></div>
+          </div>
+          <div class="interactions">
+            <div class="likes">
+              <div class="likes__heart-icon">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <p class="info__text">2</p>
+            </div>
+            <button
+              class="info__reply-button info__text-small info__text-small-space"
+            >
+              Reply
+            </button>
+          </div>
+          <!-- "Write a comment" bar with avatar -->
+          <div class="write-comment">
+            <img class="reviews__avatar" src="./images/man3.png" alt="Avatar" />
+            <div class="reply-bar comment-bar__field reply-bar__padding">
+              <div class="comment-bar__input">Write a comment</div>
+              <div class="reply-bar__send-icon">
+                <i class="material-symbols-outlined"> send </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
