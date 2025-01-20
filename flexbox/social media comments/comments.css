@@ -208,6 +208,7 @@ body {
 .write-comment {
   display: inline-flex;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .reviews__my-acc {
