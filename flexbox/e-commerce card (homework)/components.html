@@ -1,234 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="components.css" />
-    <!--Google icons connect-->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <!--Font awesome icons connect-->
-    <script
-      src="https://kit.fontawesome.com/b3ab38330d.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Components</title>
-  </head>
-  <body>
-    <!-- Header of the card -->
-    <header class="header">
-      <h1 class="header__name">Cards</h1>
-      <div class="header__line"></div>
-      <h3 class="header__text">❖ Components</h3>
-      <p class="header__description">Make them just like you want to!</p>
-    </header>
-    <!-- Main part of the card-->
-    <main class="main">
-      <div class="main__content main__content-space">
-        <!-- Card with shoes -->
-        <article class="card card--white">
-          <div class="card__content card__space-for-products">
-            <!-- Image of shoes -->
-            <div class="card__image card__image-for-shoes"></div>
-            <!-- Shopping card icon by Google Icons-->
-            <div class="card__square-for-icon">
-              <i class="card__icon material-icons">shopping_cart</i>
-            </div>
-            <!-- description -->
-            <h6 class="card__title card__description-space">Product Name</h6>
-            <h3 class="card__price card__description-space">$399</h3>
-          </div>
-        </article>
-        <!-- Card with headphones -->
-        <article class="card card--white">
-          <div class="card__content card__space-for-products">
-            <!-- Image of shoes -->
-            <div class="card__image card__image-for-earphones"></div>
-            <!-- Header -->
-            <header class="card__header card__header-space">
-              <h5 class="card__info card__info--dark">Product list</h5>
-              <div
-                class="card__number-of-products card__number-of-products-space card__number-of-products--blue card__number-of-products-text--white"
-              >
-                1245
-              </div>
-            </header>
-            <!-- Description about options -->
-            <div class="options options__space card__header-space">
-              <p class="options__text options__text--dark-blue">First option</p>
-              <div
-                class="card__number-of-products card__number-of-products-space card__number-of-products--gray card__number-of-products-text--blue"
-              >
-                23
-              </div>
-            </div>
-            <div class="options card__header-space">
-              <p class="options__text options__text--dark-blue">
-                Second option
-              </p>
-              <div
-                class="card__number-of-products card__number-of-products-space card__number-of-products--gray card__number-of-products-text--blue"
-              >
-                7
-              </div>
-            </div>
-            <div class="options card__header-space">
-              <p class="options__text options__text--dark-blue">Third option</p>
-              <div
-                class="card__number-of-products card__number-of-products-space card__number-of-products--gray card__number-of-products-text--blue"
-              >
-                1
-              </div>
-            </div>
-            <div class="options card__header-space">
-              <p class="options__text options__text--dark-blue">
-                Fourth option
-              </p>
-              <div
-                class="card__number-of-products card__number-of-products-space card__number-of-products--gray card__number-of-products-text--blue"
-              >
-                7
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- Card about Iphones-->
-        <article class="card card--blue">
-          <div class="card__content-for-iphone card__space-for-iphone-card">
-            <p class="card__phone-title">Iphone 12 mini</p>
-            <p class="card__phone-text">Best offer</p>
-            <img
-              class="card__phone-image card__space-for-iphone-image"
-              src="./images/phone.png"
-              alt="photo of iphones 12"
-            />
-            <p class="card__time-description">Time left:</p>
-            <!-- Timer part -->
-            <div class="card__timer timer">
-              <div class="timer__block timer__block-space">02</div>
-              <div class="timer__block timer__block-space">23</div>
-              <div class="timer__block timer__block-space">42</div>
-            </div>
-            <!-- Button -->
-            <button
-              class="card__button card__space-for-price-button card__button--blue"
-            >
-              Only $399.00
-            </button>
-          </div>
-        </article>
-        <!-- Review card-->
-        <article class="card card--white">
-          <div class="card__content card__space-for-review">
-            <!-- Header with avatar -->
-            <header class="card__review">
-              <div class="card__review-photo"></div>
-              <h5 class="card__info card__info--coal-black">
-                Alexandera Machec
-              </h5>
-            </header>
-            <!-- Description -->
-            <p class="card__text card__text--gray">
-              This product is exactly what I was needed. Awesome construction
-              and incredible comfort while using.
-            </p>
-            <!-- Stars by using fontAwesome-->
-            <div class="card__review-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-          </div>
-        </article>
-        <article class="card card--white">
-          <!-- Card about payment methods -->
-          <div class="card__content-for-paymethods card__space-for-paymethods">
-            <header class="card__header">
-              <h5 class="card__info card__info--black">Payment methods</h5>
-              <p class="card__word-button card__word-button--blue">Edit</p>
-            </header>
-            <!-- Credit Cards part -->
-            <div
-              class="card__credit-card card__space-for-credit-card card__space-for-higher-credit-card"
-            >
-              <img
-                class="card__credit-card-image"
-                src="./images/mastercard.jpg"
-                alt="Credit Card of Mastercard"
-              />
-              <div class="card__details">
-                <p class="card__details-name card__details-name--black">
-                  Mastercard: 5432
-                </p>
-                <p
-                  class="card__details-expr-date card__details-expr-date--grey"
-                >
-                  Exp. date: <strong class="card__date">12/20</strong>
-                </p>
-              </div>
-            </div>
-            <div class="card__credit-card card__space-for-credit-card">
-              <img
-                class="card__credit-card-image"
-                src="./images/visa.jpg"
-                alt="Credit Card of Mastercard"
-              />
-              <div class="card__details">
-                <p class="card__details-name card__details-name--black">
-                  Visa: 4291
-                </p>
-                <p
-                  class="card__details-expr-date card__details-expr-date--grey"
-                >
-                  Exp. date: <strong class="card__date">12/20</strong>
-                </p>
-              </div>
-            </div>
-            <button
-              class="card__button card__space-for-show-button card__button--blue"
-            >
-              Show more
-            </button>
-          </div>
-        </article>
-        <article class="card card--white">
-          <!-- Card for payment -->
-          <div class="card__content card__space-for-sign">
-            <!-- Money sign-->
-            <div class="card__money-sign">
-              <i class="card__sign fa-regular fa-money-bill-1 fa-xl"></i>
-            </div>
-            <h5 class="card__info card__info--dark card__space-header">
-              Payment Succesfull
-            </h5>
-            <p class="card__text card__text--gray">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <!-- Button -->
-            <button class="card__small-button card__small-button--blue">
-              Complete
-            </button>
-          </div>
-        </article>
-      </div>
-    </main>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="brand">
-        <div class="brand__logo"></div>
-        <img
-          class="brand__name"
-          src="./images/webpixels.png"
-          alt="logo of webpixels"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="components.css" />
+        <!--Google icons connect-->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
-      </div>
-      <a class="footer__hyperlink" href="https://webpixels.io"
-        ><i class="footer__heart fa-solid fa-heart"></i>Designed by Webpixels</a
-      >
-    </footer>
-  </body>
+        <!--Font awesome icons connect-->
+        <script
+            src="https://kit.fontawesome.com/b3ab38330d.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Components</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__name">Cards</h1>
+            <div class="header__line"></div>
+            <h3 class="header__text">❖ Components</h3>
+            <p class="header__description">Make them just like you want to!</p>
+        </header>
+        <main class="main">
+            <div class="main__content main__content-space">
+                <article class="card card--white">
+                    <div class="card__content card__space-for-products">
+                        <!-- Иконку позиционировать относительно изображения -->
+                        <!-- <div class="card__image" style="--card-image-bg: url(./images/snickers.jpg)"></div> -->
+                        <div
+                            class="card__image"
+                            style="background-image: url(./images/snickers.jpg)"
+                        >
+                            <div class="card__square-for-icon">
+                                <i class="card__icon material-icons"
+                                    >shopping_cart</i
+                                >
+                            </div>
+                        </div>
+
+                        <div class="card__body">
+                            <h6 class="card__title">Product Name</h6>
+                            <h3 class="card__price">$399</h3>
+                        </div>
+                    </div>
+                </article>
+                <article class="card card--white">
+                    <div class="card__content card__space-for-products">
+                        <div
+                            class="card__image card__image-for-earphones"
+                        ></div>
+                        <!-- ! -->
+                        <header class="card__header card__header-space">
+                            <h5 class="card__info card__info--dark">
+                                Product list
+                            </h5>
+                            <div
+                                class="card__number-of-products card__number-of-products-space card__number-of-products--blue card__number-of-products-text--white"
+                            >
+                                1245
+                            </div>
+                        </header>
+                        <div class="options options__space card__header-space">
+                            <p class="options__text options__text--dark-blue">
+                                First option
+                            </p>
+                            <div
+                                class="card__number-of-products card__number-of-products-space card__number-of-products--gray card__number-of-products-text--blue"
+                            >
+                                23
+                            </div>
+                        </div>
+                        <div class="options card__header-space">
+                            <p class="options__text options__text--dark-blue">
+                                Second option
+                            </p>
+                            <div
+                                class="card__number-of-products card__number-of-products-space card__number-of-products--gray card__number-of-products-text--blue"
+                            >
+                                7
+                            </div>
+                        </div>
+                        <div class="options card__header-space">
+                            <p class="options__text options__text--dark-blue">
+                                Third option
+                            </p>
+                            <div
+                                class="card__number-of-products card__number-of-products-space card__number-of-products--gray card__number-of-products-text--blue"
+                            >
+                                1
+                            </div>
+                        </div>
+                        <div class="options card__header-space">
+                            <p class="options__text options__text--dark-blue">
+                                Fourth option
+                            </p>
+                            <div
+                                class="card__number-of-products card__number-of-products-space card__number-of-products--gray card__number-of-products-text--blue"
+                            >
+                                7
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card about Iphones-->
+                <article class="card card--blue">
+                    <div
+                        class="card__content-for-iphone card__space-for-iphone-card"
+                    >
+                        <p class="card__phone-title">Iphone 12 mini</p>
+                        <p class="card__phone-text">Best offer</p>
+                        <img
+                            class="card__phone-image card__space-for-iphone-image"
+                            src="./images/phone.png"
+                            alt="photo of iphones 12"
+                        />
+                        <p class="card__time-description">Time left:</p>
+                        <!-- Timer part -->
+                        <div class="card__timer timer">
+                            <div class="timer__block timer__block-space">
+                                02
+                            </div>
+                            <div class="timer__block timer__block-space">
+                                23
+                            </div>
+                            <div class="timer__block timer__block-space">
+                                42
+                            </div>
+                        </div>
+                        <!-- Button -->
+                        <button
+                            class="card__button card__space-for-price-button card__button--blue"
+                        >
+                            Only $399.00
+                        </button>
+                    </div>
+                </article>
+                <!-- Review card-->
+                <article class="card card--white">
+                    <div class="card__content card__space-for-review">
+                        <!-- Header with avatar -->
+                        <header class="card__review">
+                            <div class="card__review-photo"></div>
+                            <h5 class="card__info card__info--coal-black">
+                                Alexandera Machec
+                            </h5>
+                        </header>
+                        <!-- Description -->
+                        <p class="card__text card__text--gray">
+                            This product is exactly what I was needed. Awesome
+                            construction and incredible comfort while using.
+                        </p>
+                        <!-- Stars by using fontAwesome-->
+                        <div class="card__review-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="card card--white">
+                    <!-- Card about payment methods -->
+                    <div
+                        class="card__content-for-paymethods card__space-for-paymethods"
+                    >
+                        <header class="card__header">
+                            <h5 class="card__info card__info--black">
+                                Payment methods
+                            </h5>
+                            <p
+                                class="card__word-button card__word-button--blue"
+                            >
+                                Edit
+                            </p>
+                        </header>
+                        <!-- Credit Cards part -->
+                        <div
+                            class="card__credit-card card__space-for-credit-card card__space-for-higher-credit-card"
+                        >
+                            <img
+                                class="card__credit-card-image"
+                                src="./images/mastercard.jpg"
+                                alt="Credit Card of Mastercard"
+                            />
+                            <div class="card__details">
+                                <p
+                                    class="card__details-name card__details-name--black"
+                                >
+                                    Mastercard: 5432
+                                </p>
+                                <p
+                                    class="card__details-expr-date card__details-expr-date--grey"
+                                >
+                                    Exp. date:
+                                    <strong class="card__date">12/20</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card__credit-card card__space-for-credit-card"
+                        >
+                            <img
+                                class="card__credit-card-image"
+                                src="./images/visa.jpg"
+                                alt="Credit Card of Mastercard"
+                            />
+                            <div class="card__details">
+                                <p
+                                    class="card__details-name card__details-name--black"
+                                >
+                                    Visa: 4291
+                                </p>
+                                <p
+                                    class="card__details-expr-date card__details-expr-date--grey"
+                                >
+                                    Exp. date:
+                                    <strong class="card__date">12/20</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <button
+                            class="card__button card__space-for-show-button card__button--blue"
+                        >
+                            Show more
+                        </button>
+                    </div>
+                </article>
+                <article class="card card--white">
+                    <!-- Card for payment -->
+                    <div class="card__content card__space-for-sign">
+                        <!-- Money sign-->
+                        <div class="card__money-sign">
+                            <i
+                                class="card__sign fa-regular fa-money-bill-1 fa-xl"
+                            ></i>
+                        </div>
+                        <h5
+                            class="card__info card__info--dark card__space-header"
+                        >
+                            Payment Succesfull
+                        </h5>
+                        <p class="card__text card__text--gray">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </p>
+                        <!-- Button -->
+                        <button
+                            class="card__small-button card__small-button--blue"
+                        >
+                            Complete
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="brand">
+                <div class="brand__logo"></div>
+                <img
+                    class="brand__name"
+                    src="./images/webpixels.png"
+                    alt="logo of webpixels"
+                />
+            </div>
+            <a class="footer__hyperlink" href="https://webpixels.io"
+                ><i class="footer__heart fa-solid fa-heart"></i>Designed by
+                Webpixels</a
+            >
+        </footer>
+    </body>
 </html>
