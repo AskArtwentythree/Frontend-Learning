@@ -5,11 +5,15 @@
     font-display: swap;
 }
 
+:root {
+    --number-of-items-bg-color: rgba(228, 236, 247, 1);
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    outline: 1px solid #000;
+    /* outline: 1px solid #000; */
 }
 
 i,
@@ -78,10 +82,8 @@ button {
  */
 
 .main__content {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: flex;
+    justify-content: space-between;
     gap: 32px;
     border-radius: 20px;
     background-color: rgba(247, 248, 251, 1);
@@ -92,13 +94,25 @@ button {
     padding: 32px;
 }
 
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
 .card {
     border-radius: 16px;
     width: 350px;
 }
 
 .card--white {
-    background-color: rgb(243, 158, 158);
+    background-color: rgb(255, 255, 255);
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .card__space-for-products {
@@ -112,7 +126,7 @@ button {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: var(--card-image-bg);
+    /* background-image: var(--card-image-bg); */
 }
 
 .card__square-for-icon {
@@ -125,7 +139,8 @@ button {
     box-shadow: 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
 }
 
-.card__icon {
+.card__body {
+    padding: 0px 16px 0 16px;
 }
 
 .card__title {
@@ -133,10 +148,6 @@ button {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
-}
-
-.card__body {
-    padding: 0px 16px 0 16px;
 }
 
 .card__price {
@@ -147,20 +158,22 @@ button {
     line-height: 27.3px;
 }
 
-.card__image-for-earphones {
-    background-image: url("./images/earphones.jpg");
-}
-
 .card__header {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.card__header-space {
-    padding-left: 17px;
-    padding-right: 16px;
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.menu__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card__info {
@@ -173,50 +186,43 @@ button {
     color: rgba(39, 39, 46, 1);
 }
 
-.card__number-of-products {
+.menu__number-of-items {
     font-size: 12px;
     font-weight: 700;
-    line-height: 14.52px;
 }
 
-.card__number-of-products-space {
+.menu__number-of-items-space {
     padding: 2px 10px;
     border-radius: 100px;
 }
 
-.card__number-of-products--blue {
+.menu__number-of-items-bg--blue {
     background-color: rgba(76, 111, 255, 1);
 }
 
-.card__number-of-products-text--white {
+.menu__number-of-items-text--white {
     color: rgba(255, 255, 255, 1);
-}
-
-.options {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 28px;
 }
 
 .options__space {
     margin-top: 16px;
 }
 
-.options__text {
+.menu__text {
     font-size: 14px;
     font-weight: 500;
     line-height: 14px;
 }
 
-.options__text--dark-blue {
+.menu__text--dark-blue {
     color: rgba(66, 84, 102, 1);
 }
 
-.card__number-of-products--gray {
-    background-color: rgba(228, 236, 247, 1);
+.menu__number-of-items-bg--gray {
+    background-color: var(--number-of-items-bg-color);
 }
 
-.card__number-of-products-text--blue {
+.menu__number-of-items-text--blue {
     color: rgba(80, 87, 128, 1);
 }
 
@@ -224,13 +230,7 @@ button {
     background-color: rgba(22, 25, 44, 1);
 }
 
-.card__content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.card__content-for-iphone {
+.card__materials {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,11 +238,11 @@ button {
     color: rgba(255, 255, 255, 1);
 }
 
-.card__space-for-iphone-card {
+.card__materials-space {
     padding: 32px;
 }
 
-.card__phone-title {
+.card__name {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
@@ -254,14 +254,12 @@ button {
     line-height: 48.41px;
 }
 
-.card__phone-image {
+.card__picture-space {
     margin: 32px 0px 28px 0px;
-}
-
-.card__space-for-iphone-image {
     padding-left: 26px;
 }
-.card__time-description {
+
+.card__description {
     font-size: 10px;
     font-weight: 400;
     line-height: 12.1px;
@@ -306,25 +304,30 @@ button {
 .card__button--blue {
     background-color: rgba(76, 111, 255, 1);
 }
-.card__space-for-review {
+
+.card__inner {
+    display: flex;
+    flex-direction: column;
+}
+.card__inner-space {
     padding: 24px 24px 32px 24px;
 }
 
-.card__review {
-    display: inline-flex;
+.card__profile {
+    display: flex;
     align-items: center;
     margin-bottom: 12px;
+    gap: 16px;
 }
 
-.card__review-photo {
+.card__photo {
     height: 46px;
     width: 46px;
-    border-radius: 100px;
+    border-radius: 50%;
     background-image: url("./images/avatar.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 16px;
 }
 
 .card__info--coal-black {
@@ -342,13 +345,13 @@ button {
     color: rgba(66, 84, 102, 1);
 }
 
-.card__review-rating {
-    display: inline-flex;
+.card__icons {
+    display: flex;
     gap: 8px;
     color: rgba(247, 147, 111, 1);
 }
 
-.card__space-for-paymethods {
+.card__paddings {
     padding: 24px 24px 11px 24px;
 }
 
@@ -368,25 +371,27 @@ button {
     color: rgba(76, 111, 255, 1);
 }
 
-.card__credit-card {
+.card__content-data {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 20px 0 24px 0;
+}
+
+.card__data {
     display: flex;
     border-radius: 16px;
     box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05),
         0px 0px 1px 0px rgba(12, 26, 75, 0.24);
     gap: 16px;
-    margin-top: 20px;
+    align-items: center;
 }
 
-.card__space-for-credit-card {
+.card__data-space {
     padding: 16px 48px 16px 16px;
 }
 
-.card__space-for-higher-credit-card {
-    margin-top: 20px;
-    margin-bottom: 16px;
-}
-
-.card__credit-card-image {
+.card__data-image {
     width: 85px;
     height: 58px;
 }
@@ -400,15 +405,15 @@ button {
     line-height: 25.92px;
 }
 
-.card__details-name--black {
+.card__details--black {
     color: rgba(39, 39, 46, 1);
 }
 
-.card__details-expr-date--grey {
+.card__details--grey {
     color: rgba(66, 84, 102, 1);
 }
 
-.card__date {
+.card__details-info {
     color: black;
     font-size: 14px;
     font-weight: 600;
@@ -417,23 +422,21 @@ button {
 
 .card__space-for-show-button {
     padding: 16px 113px;
-    margin-top: 24px;
 }
 
 .card__space-for-sign {
     padding: 32px;
 }
 
-.card__money-sign {
+.card__icon {
     width: 48px;
     height: 48px;
-    border-radius: 100px;
+    border-radius: 50%;
     background-color: rgba(102, 203, 159, 1);
     margin-bottom: 24px;
 }
 
 .card__sign {
-    position: relative;
     transform: translate(11px, 13px);
     color: rgba(255, 255, 255, 1);
 }
@@ -475,8 +478,9 @@ button {
 }
 
 .brand {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    gap: 11px;
 }
 
 .brand__logo {
@@ -486,7 +490,6 @@ button {
     background-image: url("./images/webpixels-seeklogo.png");
     background-size: cover;
     background-position: top center;
-    margin-right: 11px;
     box-shadow: 0px 30px 40px 0px rgba(20, 37, 63, 0.08),
         0px 0px 1px 0px rgba(12, 26, 75, 0.1);
 }
@@ -496,7 +499,13 @@ button {
     height: 22px;
 }
 
-.footer__heart {
+.hyperlink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.hyperlink__icon {
     color: rgba(255, 51, 85, 1);
-    padding-right: 10px;
 }

@@ -6,227 +6,228 @@
 } */
 
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* ADD OUTLINE TO CHECK TROUBLES */
 }
 
 body {
-  padding: 100px 650px;
-  background-color: black;
-  font-family: "Roboto";
+    padding: 100px 650px;
+    background-color: black;
+    font-family: "Roboto";
 }
 
 .page {
-  padding: 24px;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 1);
-  border: 1px solid gray;
-  width: 450px;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid gray;
+    width: 450px;
 }
 
 .profile {
-  display: inline-flex;
-  align-items: center;
+    display: inline-flex;
+    align-items: center;
 }
 
 .profile__avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  background-image: url("./images/avatar.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-image: url("./images/avatar.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
 }
 
 .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3px;
 }
 
 .info__text {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.005em;
-  color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: rgba(0, 0, 0, 1);
 }
 
 .info__reply-button {
-  background: none;
-  border: none;
+    background: none;
+    border: none;
 }
 
 .info__reply-button:hover {
-  cursor: pointer;
-  text-decoration: underline;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .info__text-small {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.0025em;
-  color: rgba(108, 117, 125, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.0025em;
+    color: rgba(108, 117, 125, 1);
 }
 
 .images {
-  padding: 24px 0px;
-  display: flex;
-  gap: 5px;
+    padding: 24px 0px;
+    display: flex;
+    gap: 5px;
 }
 
 .images__picture {
-  width: 198.5px;
-  height: 101px;
-  border-radius: 8px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+    width: 198.5px;
+    height: 101px;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .images__picture-left {
-  background-image: url("./images/image1.jpg");
+    background-image: url("./images/image1.jpg");
 }
 
 .images__picture-right {
-  background-image: url("./images/image2.jpg");
+    background-image: url("./images/image2.jpg");
 }
 
 .page__header {
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 44.2px;
-  color: rgba(0, 0, 0, 1);
-  margin-bottom: 24px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 44.2px;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 24px;
 }
 
 .page__text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0.5px;
-  color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 1);
 }
 
 .page__text-space {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .likes {
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-start;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .likes__heart-icon {
-  color: rgba(221, 25, 29, 1);
-  margin-right: 6px;
+    color: rgba(221, 25, 29, 1);
+    margin-right: 6px;
 }
 
 .comment-bar-space {
-  margin-bottom: 24px;
-  margin-top: 20px;
+    margin-bottom: 24px;
+    margin-top: 20px;
 }
 
 .comment-bar__field {
-  border-radius: 8px;
-  background: rgba(248, 248, 248, 1);
-  box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 0.47) inset;
+    border-radius: 8px;
+    background: rgba(248, 248, 248, 1);
+    box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 0.47) inset;
 }
 
 .comment-bar__field-space {
-  padding: 9px 0 9px 9px;
+    padding: 9px 0 9px 9px;
 }
 
 .comment-bar__input {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.005em;
-  color: rgba(108, 117, 125, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: rgba(108, 117, 125, 1);
 }
 
 .reviews {
-  display: inline-flex;
-  align-items: flex-start;
+    display: inline-flex;
+    align-items: flex-start;
 }
 
 .reviews__avatar {
-  border-radius: 50px;
-  height: 40px;
-  width: 40px;
-  margin-right: 12px;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    margin-right: 12px;
 }
 
 .comment {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3px;
 }
 
 .nickname {
-  display: inline-flex;
-  gap: 10px;
-  align-items: center;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .interactions {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 0px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
 }
 
 .info__text-small-space {
-  padding: 2px 0px;
+    padding: 2px 0px;
 }
 
 .reviews__space {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .image__space {
-  padding: 10px 0px;
+    padding: 10px 0px;
 }
 
 .comment__image {
-  width: 348px;
-  height: 172px;
-  border-radius: 8px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("./images/lake.jpg");
+    width: 348px;
+    height: 172px;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/lake.jpg");
 }
 
 .write-comment {
-  display: inline-flex;
-  align-items: center;
-  margin-bottom: 24px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 24px;
 }
 
 .reviews__my-acc {
-  background-image: url("./images/man3.png");
+    background-image: url("./images/man3.png");
 }
 
 .reply-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .reply-bar__padding {
-  padding: 10px 24px;
+    padding: 10px 24px;
 }
 
 .reply-bar__send-icon {
-  color: rgba(18, 54, 243, 1);
-  margin-left: 99px;
-  cursor: pointer;
+    color: rgba(18, 54, 243, 1);
+    margin-left: 99px;
+    cursor: pointer;
 }
