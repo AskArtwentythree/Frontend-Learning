@@ -10,36 +10,43 @@
     padding: 0px;
     box-sizing: border-box;
     /* ADD OUTLINE TO CHECK TROUBLES */
+    /* outline: 1px solid #000; */
+}
+
+i,
+img {
+    vertical-align: top;
 }
 
 body {
-    padding: 100px 650px;
     background-color: black;
     font-family: "Roboto";
+    display: grid; /* Разобрать */
+    place-content: center;
+    min-height: 100vh;
 }
 
 .page {
-    padding: 24px;
+    padding: 24px 24px 48px 24px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 1);
-    border: 1px solid gray;
     width: 450px;
 }
 
 .profile {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .profile__avatar {
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     background-image: url("./images/avatar.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 10px;
 }
 
 .info {
@@ -55,16 +62,6 @@ body {
     line-height: 24px;
     letter-spacing: 0.005em;
     color: rgba(0, 0, 0, 1);
-}
-
-.info__reply-button {
-    background: none;
-    border: none;
-}
-
-.info__reply-button:hover {
-    cursor: pointer;
-    text-decoration: underline;
 }
 
 .info__text-small {
@@ -90,14 +87,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.images__picture-left {
-    background-image: url("./images/image1.jpg");
-}
-
-.images__picture-right {
-    background-image: url("./images/image2.jpg");
-}
-
 .page__header {
     font-size: 34px;
     font-weight: 700;
@@ -118,33 +107,42 @@ body {
     margin-bottom: 20px;
 }
 
-.likes {
-    display: inline-flex;
+.action {
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
+    gap: 6px;
 }
 
-.likes__heart-icon {
+.action__icon {
     color: rgba(221, 25, 29, 1);
-    margin-right: 6px;
 }
 
-.comment-bar-space {
+.info__word-button {
+    background: none;
+    border: none;
+}
+
+.info__word-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.bar-space {
     margin-bottom: 24px;
     margin-top: 20px;
 }
 
-.comment-bar__field {
+.bar__field {
     border-radius: 8px;
     background: rgba(248, 248, 248, 1);
     box-shadow: 0px 0px 2px -1px rgba(0, 0, 0, 0.47) inset;
 }
 
-.comment-bar__field-space {
+.bar__field-space {
     padding: 9px 0 9px 9px;
 }
 
-.comment-bar__input {
+.bar__input {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -153,15 +151,14 @@ body {
 }
 
 .reviews {
-    display: inline-flex;
-    align-items: flex-start;
+    display: flex;
+    gap: 12px;
 }
 
 .reviews__avatar {
-    border-radius: 50px;
+    border-radius: 50%;
     height: 40px;
     width: 40px;
-    margin-right: 12px;
 }
 
 .comment {
@@ -171,21 +168,20 @@ body {
     gap: 3px;
 }
 
-.nickname {
-    display: inline-flex;
+.data {
+    display: flex;
     gap: 10px;
     align-items: center;
 }
 
 .interactions {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 0px;
 }
 
-.info__text-small-space {
-    padding: 2px 0px;
+.interactions__space {
+    padding: 10px 0px;
 }
 
 .reviews__space {
@@ -207,27 +203,28 @@ body {
 }
 
 .write-comment {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    margin-bottom: 24px;
+    gap: 10px;
 }
 
 .reviews__my-acc {
     background-image: url("./images/man3.png");
 }
 
-.reply-bar {
+.small-bar {
     display: flex;
+    /* Почему space-between не работает? */
     justify-content: space-between;
     align-items: center;
+    gap: 99px;
 }
 
-.reply-bar__padding {
+.small-bar__padding {
     padding: 10px 24px;
 }
 
-.reply-bar__send-icon {
+.small-bar__icon {
     color: rgba(18, 54, 243, 1);
-    margin-left: 99px;
     cursor: pointer;
 }
