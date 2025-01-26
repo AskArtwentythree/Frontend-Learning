@@ -20,6 +20,3 @@ https://doka.guide/css/mobile-first-vs-desktop-first/
 9) Вопрос про ul li in social-links profile и как правильно в таких ситуациях делать кнопки с гиперссылками? Разобрать feedback чела с frontendmentor
 
 10) Будем ли мы делайт сайты с паралаксом?
-
-тестов тест тестович
-
