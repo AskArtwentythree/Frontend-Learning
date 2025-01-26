@@ -10,7 +10,7 @@
     padding: 0px;
     box-sizing: border-box;
     /* ADD OUTLINE TO CHECK TROUBLES */
-    /* outline: 1px solid #000; */
+    outline: 1px solid #000;
 }
 
 i,
@@ -21,16 +21,23 @@ img {
 body {
     background-color: black;
     font-family: "Roboto";
-    display: grid; /* Разобрать */
+    /* Разобрать */
+    /* display: grid; 
     place-content: center;
+    min-height: 100vh; */
+    /* 1vh = 1view height (1% от высоты экрана) */
+
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .page {
     padding: 24px 24px 48px 24px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 1);
-    width: 450px;
+    width: 650px;
 }
 
 .profile {
@@ -47,13 +54,15 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    /* background: color url("image") position / size repeat; */
 }
 
 .info {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 3px;
+    gap: 3px; */
 }
 
 .info__text {
@@ -62,6 +71,7 @@ body {
     line-height: 24px;
     letter-spacing: 0.005em;
     color: rgba(0, 0, 0, 1);
+    margin-bottom: 3px;
 }
 
 .info__text-small {
@@ -73,14 +83,15 @@ body {
 }
 
 .images {
-    padding: 24px 0px;
+    margin: 24px 0px;
     display: flex;
     gap: 5px;
 }
 
 .images__picture {
-    width: 198.5px;
-    height: 101px;
+    background-color: red;
+    width: 50%;
+    aspect-ratio: 2 / 1;
     border-radius: 8px;
     background-position: center;
     background-size: cover;
@@ -115,6 +126,9 @@ body {
 
 .action__icon {
     color: rgba(221, 25, 29, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .info__word-button {
@@ -139,7 +153,7 @@ body {
 }
 
 .bar__field-space {
-    padding: 9px 0 9px 9px;
+    padding: 9px;
 }
 
 .bar__input {
@@ -147,6 +161,10 @@ body {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.005em;
+    width: 100%;
+}
+
+.bar__input::placeholder {
     color: rgba(108, 117, 125, 1);
 }
 
@@ -166,6 +184,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     gap: 3px;
+    flex: 1;
 }
 
 .data {
@@ -181,7 +200,7 @@ body {
 }
 
 .interactions__space {
-    padding: 10px 0px;
+    margin: 10px 0px;
 }
 
 .reviews__space {
@@ -193,7 +212,6 @@ body {
 }
 
 .comment__image {
-    width: 348px;
     height: 172px;
     border-radius: 8px;
     background-position: center;
@@ -213,11 +231,11 @@ body {
 }
 
 .small-bar {
+    flex: 1;
     display: flex;
-    /* Почему space-between не работает? */
     justify-content: space-between;
     align-items: center;
-    gap: 99px;
+    gap: 10px;
 }
 
 .small-bar__padding {
