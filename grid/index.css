@@ -1,0 +1,277 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/Gilroy-Black.woff") format("woff");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/Gilroy-ExtraBold.woff") format("woff");
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/Gilroy-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/Gilroy-SemiBold.woff") format("woff");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/Gilroy-Medium.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/Gilroy-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/Gilroy-Light.woff") format("woff");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/Gilroy-UltraLight.woff") format("woff");
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/Gilroy-Thin.woff") format("woff");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/Gilroy-Heavy.woff") format("woff");
+    font-style: normal;
+    font-weight: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+    /* outline: 1px solid #000; */
+}
+
+.header {
+    background: linear-gradient(
+        102.87deg,
+        #fceed5 6.43%,
+        #fceed5 78.33%,
+        #ffe7ba 104.24%
+    );
+    padding: 30px 0 0 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu__logo {
+    margin-right: 48px;
+}
+
+.menu__navigation {
+    font-weight: 700;
+    line-height: 24px;
+    color: rgba(0, 52, 89, 1);
+}
+
+.menu__navigation li:hover {
+    text-decoration: underline;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    text-decoration: none;
+}
+
+.menu__option {
+    text-decoration: none;
+    color: inherit;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 46px;
+    background: rgba(253, 253, 253, 1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0 12px 16px;
+    margin-left: 36px;
+    margin-right: 14px;
+}
+
+.search-bar__input {
+    outline: none;
+    border: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+::placeholder {
+    color: rgba(153, 162, 165, 1);
+}
+
+.search-bar__button {
+    border: 0;
+    background: none;
+}
+
+.menu__button {
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 57px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu__button--blue {
+    background-color: rgba(0, 52, 89, 1);
+}
+
+.menu__button--text-white {
+    color: rgba(253, 253, 253, 1);
+}
+
+.menu__button--blue:hover {
+    background: rgb(0, 39, 67);
+}
+
+/* ДОДЕЛАТЬ ДРОПДОВН МЕНЮ */
+
+.dropdown__menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+    color: rgba(0, 42, 72, 1);
+}
+
+.dropdown__options {
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 42, 72, 1);
+    padding: 3px;
+}
+
+.dropdown__options:hover {
+    background: rgba(235, 238, 239, 1);
+    border-radius: 14px;
+    padding: 3px;
+}
+
+.dropdown {
+    display: block;
+}
+
+.dropdown .dropdown__content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown:hover .dropdown__content {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 24px 24px 24px;
+    gap: 3px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(204, 209, 210, 1);
+    border-radius: 16px;
+    padding: 10px 12px;
+    box-shadow: 0px 4px 24px -2px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown__content {
+    text-decoration: none;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+    max-width: 1300px;
+    margin-top: 110px;
+    position: relative;
+}
+
+.content__text {
+    /* width: 50%; */
+    color: rgba(0, 42, 72, 1);
+}
+
+.content__title {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 68px;
+    margin-bottom: 4px;
+}
+
+.content__subtitle {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+
+.content__paragraph {
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(36, 43, 51, 1);
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.menu__button--transparent {
+    border: 1.5px solid rgba(0, 52, 89, 1);
+}
+
+.menu__button--transparent:hover {
+    border: 1.5px solid rgba(253, 253, 253, 1);
+}
+
+.menu__button--text-blue {
+    color: rgba(0, 52, 89, 1);
+}
+
+.menu__button--text-white {
+    color: rgba(253, 253, 253, 1);
+}
